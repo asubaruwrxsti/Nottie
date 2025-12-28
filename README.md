@@ -12,6 +12,16 @@ A simple Chrome extension to save highlighted text from any webpage as searchabl
 - **Local Storage**: All notes stored locally in your browser
 - **Export**: All notes are exportable in .txt format
 
+## How to Install
+
+1. Download or clone this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable **Developer mode** (toggle in the top right corner)
+4. Click **Load unpacked**
+5. Select the `NoteExtension` folder
+6. The extension icon will appear in your toolbar
+7. (Optional) Click the puzzle icon and pin Nottie for easy access
+
 ## How to Use
 
 ### Saving a Note
