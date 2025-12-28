@@ -4,9 +4,9 @@ A simple Chrome extension to save highlighted text from any webpage as searchabl
 
 ## Screenshots
 
-| Save Tab | Search Tab | Highlighting Text |
-|----------|------------|-------------------|
-| ![Save Tab](screenshots/save-tab.png) | ![Search Tab](screenshots/search-tab.png) | ![Highlighting](screenshots/highlighting.png) |
+| Highlighting Text | Save Tab | Search Tab |
+|-------------------|----------|------------|
+| ![Highlighting](screenshots/highlighting.png) | ![Save Tab](screenshots/save-tab.png) | ![Search Tab](screenshots/search-tab.png) |
 
 ## Features
 
@@ -24,7 +24,7 @@ A simple Chrome extension to save highlighted text from any webpage as searchabl
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable **Developer mode** (toggle in the top right corner)
 4. Click **Load unpacked**
-5. Select the `NoteExtension` folder
+5. Select the `Nottie` folder
 6. The extension icon will appear in your toolbar
 7. (Optional) Click the puzzle icon and pin Nottie for easy access
 
