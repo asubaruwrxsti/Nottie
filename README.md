@@ -2,6 +2,12 @@
 
 A simple Chrome extension to save highlighted text from any webpage as searchable notes.
 
+## Screenshots
+
+| Save Tab | Search Tab | Highlighting Text |
+|----------|------------|-------------------|
+| ![Save Tab](screenshots/save-tab.png) | ![Search Tab](screenshots/search-tab.png) | ![Highlighting](screenshots/highlighting.png) |
+
 ## Features
 
 - **Save Highlighted Text**: Select any text on a webpage and save it as a note
