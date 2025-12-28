@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nottie</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Nottie</h1>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="save">Save</button>
+        <button class="tab-btn" data-tab="search">Search</button>
+      </div>
+    </header>
+
+    <!-- Save Tab -->
+    <div id="save-tab" class="tab-content active">
+      <div id="selection-preview">
+        <label>Selected Text:</label>
+        <div id="selected-text" class="preview-box">
+          <em>Highlight text on the page, then open this popup</em>
+        </div>
+      </div>
+      
+      <div id="page-info">
+        <div class="info-item">
+          <label>Page Title:</label>
+          <span id="page-title">-</span>
+        </div>
+        <div class="info-item">
+          <label>URL:</label>
+          <span id="page-url" title="">-</span>
+        </div>
+      </div>
+
+      <div class="tags-section">
+        <label>Tags (comma separated):</label>
+        <input type="text" id="tags-input" placeholder="e.g., research, important">
+      </div>
+
+      <button id="save-btn" class="primary-btn" disabled>Save Note</button>
+      
+      <div id="confirmation" class="hidden">
+        <span class="checkmark">✓</span> Saved!
+      </div>
+    </div>
+
+    <!-- Search Tab -->
+    <div id="search-tab" class="tab-content">
+      <div class="search-section">
+        <input type="text" id="search-input" placeholder="Search notes by keyword...">
+        <button id="search-btn" class="secondary-btn">Search</button>
+      </div>
+      
+      <div id="search-results">
+        <p class="placeholder-text">Enter a keyword to search your notes</p>
+      </div>
+
+      <div class="notes-actions">
+        <button id="show-all-btn" class="text-btn">Show All Notes</button>
+        <button id="export-all-btn" class="text-btn">Export All</button>
+        <button id="clear-all-btn" class="text-btn danger">Clear All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Note Detail Modal -->
+  <div id="note-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <h3>Note Details</h3>
+      <div id="modal-note-content"></div>
+      <div class="modal-actions">
+        <button id="copy-note-btn" class="secondary-btn">Copy Text</button>
+        <button id="export-note-btn" class="secondary-btn">Export</button>
+        <button id="open-url-btn" class="secondary-btn">Open Source</button>
+        <button id="delete-note-btn" class="danger-btn">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
